@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -286,8 +287,15 @@
     </div>
 </nav>
 
-<header class="hero">
-    <div class="container">
+<header class="hero" style="position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; z-index: 0;
+            background-image: url('/assets/hero.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.2;">
+    </div>
+    <div class="container" style="position: relative; z-index: 1;">
         <div class="eyebrow">bo hanssen — the netherlands</div>
         <h1>Architect by day, <em>builder</em> by evening.</h1>
         <p class="lede">
@@ -298,6 +306,7 @@
         </p>
     </div>
 </header>
+
 
 <section id="about" class="reveal">
     <div class="container">
